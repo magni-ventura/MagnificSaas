@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head_title %}{{page_title}} {{block.super}}{% endblock head_title %}
+
+{% block content %}
+<h2>{{page_title}}</h2>
+<p>This is a simple Django web application that demonstrates the use of different URL routing patterns.</p>
+
+{% include 'snippets/welcome-user-msg.html' %}
+
+<p>Page visit: {{page_visit_count}}</p>
+
+<p>Percent: {{percent}}</p>
+
+<p>Total visit: {{total_visit_count}}</p>
+
+{% endblock content %}

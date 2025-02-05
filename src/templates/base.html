@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <h1>
+        {{page_title}}
+        </h1>
+        <p>{{request.user}} {{request.method}}</p>
+
+        {% block content %}
+            <!-- Page content goes here -->
+        {% endblock %}
+    </body>
+</html>
